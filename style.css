@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111; /* Fundo geral */
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(33, 32, 32);
+    padding: 20px;
+}
+
+header h1 {
+    color: aliceblue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.5s, font-size 0.3s;
+}
+
+nav a:hover {
+    color: darkorchid;
+    font-size: 20px;
+}
+
+/* Área principal */
+main {
+    background: url('synthwave.jpg') no-repeat center center/cover;
+    padding: 40px 20px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efeito neon animado no título */
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff;
+    animation: neonPulse 2s infinite alternate;
+}
+
+/* Animação do brilho neon */
+@keyframes neonPulse {
+    from {
+        text-shadow:
+            0 0 5px #ff00ff,
+            0 0 10px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 40px #ff00ff,
+            0 0 80px #ff00ff;
+    }
+    to {
+        text-shadow:
+            0 0 10px #ff33ff,
+            0 0 20px #ff33ff,
+            0 0 30px #ff33ff,
+            0 0 50px #ff33ff,
+            0 0 100px #ff33ff;
+    }
+}
+
+main p {
+    text-align: center;
+    max-width: 95%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(33, 32, 32);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Ajuste para separações */
+section {
+    margin-bottom: 30px;
+}
