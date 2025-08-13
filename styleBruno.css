@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111; /* Fundo geral */
+    color: white;
+}
+
+header {
+    background-color: rgb(33, 32, 32);
+    padding: 20px;
+}
+
+header h1 {
+    color: aliceblue;
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    margin-right: 1500px;
+    margin-left: 20px;
+}
+
+h1:hover {
+    cursor: default;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.5s, font-size 0.3s;
+}
+
+nav a:hover {
+    color: darkorchid;
+    font-size: 20px;
+}
+
+main {
+    background: url('synthwave.jpg') no-repeat center center/cover;
+    padding: 40px 20px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h2 {
+    text-align: center;
+    position: absolute;
+    margin-bottom: 540px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff;
+    animation: neonPulse 2s infinite alternate;
+}
+
+h2:hover {
+    cursor: default;
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow:
+            0 0 5px #ff00ff,
+            0 0 10px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 40px #ff00ff,
+            0 0 80px #ff00ff;
+    }
+    to {
+        text-shadow:
+            0 0 10px #ff33ff,
+            0 0 20px #ff33ff,
+            0 0 30px #ff33ff,
+            0 0 50px #ff33ff,
+            0 0 100px #ff33ff;
+    }
+}
+
+main p {
+    text-align: center;
+    max-width: 95%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: rgb(33, 32, 32);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.catalogo-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    position: absolute;
+    margin-bottom: 460px;
+    margin-right: 1500px;
+}
+
+.barra-pesquisa {
+    width: 250px;
+    margin-top: -20px;
+    margin-left: -50px;
+}
+
+.lista-jogos {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.lista-jogos div {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.lista-jogos img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.lista-jogos div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lista-jogos div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+}
+
+.barra-pesquisa input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid #ff00ff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.barra-pesquisa input[type="text"]:focus {
+    box-shadow: 0 0 10px #ff00ff;
+    border-color: #ff33ff;
+}
+
+.barra-pesquisa button {
+    padding: 10px 15px;
+    border: none;
+    background-color: darkorchid;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.barra-pesquisa button:hover {
+    background-color: rgb(85, 0, 85);
+    transform: scale(1.03);
+    box-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff;
+}
+
+#semJogos {
+    position: absolute;
+    color: #000000;
+    font-size: 40px;
+    background-color: #474747a1;
+    margin-top: 110%;
+    margin-left: 335%;
+    width: 370px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 8px;
+    height: 130px;
+}
+
+#semJogos:hover {
+    cursor: default;
+}
+
