@@ -54,6 +54,14 @@ nav a:hover {
     font-size: 20px;
 }
 
+#preencherFormulario {
+    position: inherit;
+}
+
+#formularioDevolucao {
+    position: inherit;
+}
+
 main {
     background: url('imagens/synthwave.jpg') no-repeat center center/cover;
     padding: 40px 20px;
@@ -101,6 +109,25 @@ h2:hover {
             0 0 100px #ff33ff;
     }
 }
+
+#preencherFormulario {
+    margin-bottom: 40px;
+}
+
+#enviarDevolucao {
+    border-style: solid;
+    border-color: #000000;
+    background-color: #0fabc7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#enviarDevolucao:hover {
+    cursor: pointer;
+    background-color: #096d89;
+    
+}
+
 
 main p {
     text-align: center;
