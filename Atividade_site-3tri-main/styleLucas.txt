@@ -1,0 +1,80 @@
+
+#preencherFormulario {
+    margin-bottom: 40px;
+}
+
+#enviarDevolucao {
+    border-style: solid;
+    border-color: #000000;
+    background-color: #0fabc7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#enviarDevolucao:hover {
+    cursor: pointer;
+    background-color: #096d89;
+    
+}
+
+/* Fundo do formulário com opacidade */
+#formularioDevolucao {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo opaco */
+    border-radius: 10px;  /* Borda arredondada do formulário */
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+/* Estilizando os campos de entrada */
+#formularioDevolucao input,
+#formularioDevolucao select,
+#formularioDevolucao textarea {
+    width: 100%;
+    padding: 12px;  /* Aumenta o padding para dar um efeito mais confortável */
+    margin-bottom: 15px;
+    border: 2px solid #444; /* Cor das bordas */
+    border-radius: 8px; /* Campos arredondados */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo com opacidade */
+    color: rgb(0, 132, 255);
+    font-size: 16px;
+    transition: all 0.3s ease; /* Transição suave para o foco */
+}
+
+/* Efeito de foco nos campos de entrada */
+#formularioDevolucao input:focus,
+#formularioDevolucao select:focus,
+#formularioDevolucao textarea:focus {
+    border-color: #ff00ff; /* Cor de borda ao focar */
+    box-shadow: 0 0 8px #ff00ff; /* Efeito de destaque */
+    outline: none;
+}
+
+/* Efeito específico para o botão */
+#enviarDevolucao {
+    background-color: #0fabc7; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito de hover no botão */
+#enviarDevolucao:hover {
+    background-color: #096d89; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.05);  /* Efeito de aumento do botão */
+}
+
+/* Efeito ao pressionar o botão */
+#enviarDevolucao:active {
+    background-color: #0fabc7;
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+
