@@ -494,7 +494,7 @@ pagina de login e cadastro / código do antony
     cursor: default;
 }
 
-#textoEntrarContinue {
+#textoEntrarMundoJogos {
     z-index: 3;
     background-color: transparent;
     position: absolute;
@@ -507,22 +507,59 @@ pagina de login e cadastro / código do antony
     cursor: default;
 }
 
-#textoEntrarComece {
-    z-index: 3;
-    background-color: transparent;
-    position: absolute;
-    margin-bottom: 20%;
-    font-size: 20px;
-}
-
-#textoEntrarComece:hover {
-    cursor: default;
-}
 
 #botaoEntrar {
     position: absolute;
     background-color: transparent;
     z-index: 3;
+    margin-left: 35%;
+    margin-top: 20%;
+    width: 10%;
+    background-color: #2cac4c;
+    border-radius: 3px;
+    height: 4%;
+}
+
+#textoBotaoEntrar {
+    color: #000000;
+}
+
+#formularioEntrar {
+    z-index: 4;
+    display: inline-block;
+}
+
+#nomeDeUsuario {
+    z-index: 4;
+    margin: 10%;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 0.5%;
+    display: block;
+    margin-left: 122%;
+}
+
+#email {
+    z-index: 4;
+    margin: 10%;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 0.5%;
+    display: block;
+    margin-left: 122%;
+}
+
+#senha {
+    z-index: 4;
+    margin: 10%;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 0.5%;
+    display: block;
+    margin-left: 122%;
 }
 
 #logoHeader {

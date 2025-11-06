@@ -26,30 +26,27 @@
 </header>
 
 <main>
-    <p id="textoEntrarContinue">Continue sua aventura no mundo dos jogos!</p>
+    <p id="textoEntrarMundoJogos">Continue sua aventura no mundo dos jogos!</p>
     <p id="textoEntrarBemVindo">Olá novamente!</p>
     <p id="textoEntrarMV">MEMORYCARD VAULT</p>
     <div id="fundoLogin"></div>
     <div id="fundoLogin2"></div>
 
-    <button id="botaoEntrar">
-        <a href="index.html">LOGIN</a>
-    </button>
+    <a id="irProCadastro" href="cadastrousuarios.html">Não tem uma conta? Cadastre-se agora clicando aqui.</a>
 
-    <a id="irProCadastro" href="cadastro.html">Não tem uma conta? Cadastre-se agora clicando aqui.</a>
-
-    <form action="/submit-login" id="formularioLogin">
+    <form action="/submit-login" method="post" id="formularioEntrar">
 
         <label for="nomeDeUsuario"></label>
-        <input type="text" id="nomeDeUsuario">
+        <input type="text" id="nomeDeUsuario" placeholder="Nome de Usuário" name="nomeDeUsuario" required>
 
         <label for="email"></label>
-        <input type="text" id="email">
+        <input type="text" id="email" placeholder="E-mail" name="email" required>
 
         <label for="senha"></label>
-        <input type="text" id="senha">
-
+        <input type="password" id="senha" placeholder="Senha" name="senha" required>
     </form>
+
+    <input type="submit" value="LOGIN" id="botaoEntrar">
 </main>
 
 <footer>

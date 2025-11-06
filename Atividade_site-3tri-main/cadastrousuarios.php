@@ -20,7 +20,7 @@ if (isset($_POST['cadastrar'])) {
     $senha = $conexao->real_escape_string($_POST['senha']);
 
 
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    $sql = "INSERT INTO usuarios (Nome do Usuário, E-mail, Senha) VALUES ('$nome', '$email', '$senha')";
     
     if ($conexao->query($sql) === TRUE) {
         echo "Cadastro realizado com sucesso! O novo ID é: " . $conexao->insert_id;
